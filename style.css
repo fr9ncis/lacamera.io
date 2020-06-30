@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/* General/Defaults */
+:root {
+        /* gruvbox-dark color scheme */
+        --background-hard: #1d2021;
+        --background-medium: #282828;
+        --background-soft: #32302f;
+        --foreground: #ebdbb2;
+        --dark-red: #cc241d;
+        --dark-green: #98971a;
+        --dark-yellow: #d79921;
+        --dark-blue: #458588;
+        --dark-purple: #b16286;
+        --dark-teal: #689d6a;
+        --dark-gray: #928374;
+        --light-red: #fb4934;
+        --light-green: #b8bb26;
+        --light-yellow: #fabd2f;
+        --light-blue: #83a598;
+        --light-purple: #d3869b;
+        --light-teal: #8ec07c;
+        --light-gray: #a89984;
+        --font-family:'Fira Code', 'Source Code Pro', Consolas, 'Open Sans', 'Lucida Console', Courier, monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  scrollbar-color: var(--background-hard) var(--background-medium);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  background-color: var(--background-hard);
+}
+
+body {
+  max-width: 1050px;
+  background-color: var(--background-medium);
+  color: var(--foreground);
+}
+
+a {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--dark-purple);
+}
+
+/* Navigation */
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-logo {
+  display: inline-block;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.nav-item>a>img {
+}
+
+.nav-logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0.75rem;
+  width: 100%;
+  text-align: center;
+}
