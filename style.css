@@ -101,17 +101,18 @@ a:hover {
   padding: 10px 15px;
 }
 
-/* page: privacy */
-.privacy-container  {
+/* General wrappers/container */
+.wrapper  {
   padding: 1.8rem;
   margin-top: 2.5rem;
 }
 
-.privacy-container > h1 {
+.wrapper > h1 {
   font-size: 1.8rem;
   text-align: center;
 }
 
+/* Page: privacy */
 .privacy-notice {
   margin-top: 1.15rem;
 }
@@ -126,6 +127,27 @@ a:hover {
 }
 
 .privacy-notice > ul {
+  margin: 0.65rem 0 0.65rem 2rem;
+}
+
+/* Page: contact */
+.contact-container {
+  margin-top: 1.15rem;
+}
+.contact-container > ul {
+  margin: 0.65rem 0 0.65rem 2rem;
+}
+
+/* Page: repositories */
+.repositories-container {
+  margin-top: 1.15rem;
+}
+
+.repositories-container > p {
+ text-align: center; 
+}
+
+.repositories-container > ul {
   margin: 0.65rem 0 0.65rem 2rem;
 }
 
