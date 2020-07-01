@@ -1,0 +1,139 @@
+/* Font definitions */
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/FiraCode_latinExt.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/FiraCode_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* General/Defaults */
+:root {
+  /* gruvbox-dark color scheme */
+  --background-hard: #1d2021;
+  --background-medium: #282828;
+  --background-soft: #32302f;
+  --foreground: #ebdbb2;
+  --dark-red: #cc241d;
+  --dark-green: #98971a;
+  --dark-yellow: #d79921;
+  --dark-blue: #458588;
+  --dark-purple: #b16286;
+  --dark-teal: #689d6a;
+  --dark-gray: #928374;
+  --light-red: #fb4934;
+  --light-green: #b8bb26;
+  --light-yellow: #fabd2f;
+  --light-blue: #83a598;
+  --light-purple: #d3869b;
+  --light-teal: #8ec07c;
+  --light-gray: #a89984;
+  /* FiraCode is a sexy font, you should really try it :P Make sure you get a patched version, too. */
+  --font-family:'Fira Code', 'Source Code Pro', Consolas, 'Open Sans', 'Lucida Console', Courier, monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  scrollbar-color: var(--background-hard) var(--background-medium);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  background-color: var(--background-hard);
+}
+
+body {
+  max-width: 1050px;
+  background-color: var(--background-medium);
+  color: var(--foreground);
+}
+
+a {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--dark-purple);
+}
+
+a:hover {
+  color: var(--light-blue);
+}
+
+/* Navigation */
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-logo {
+  display: inline-block;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+/* page: privacy */
+.privacy-container  {
+  padding: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+.privacy-container > h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.privacy-notice {
+  margin-top: 1.15rem;
+}
+
+.privacy-notice > h2 {
+  color: var(--dark-yellow);
+  font-size: 1.35rem;
+}
+
+.privacy-notice > p {
+  margin-top: 0.15rem;
+}
+
+.privacy-notice > ul {
+  margin: 0.65rem 0 0.65rem 2rem;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0.75rem;
+  width: 100%;
+  text-align: center;
+}
