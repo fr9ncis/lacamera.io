@@ -52,6 +52,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height:100%;
+}
+
 html {
   font-family: var(--font-family);
   background-color: var(--background-hard);
@@ -103,6 +107,7 @@ a:hover {
 
 /* General wrappers/container */
 .wrapper  {
+  box-sizing: border-box;
   padding: 1.8rem;
   margin-top: 2.5rem;
 }
@@ -153,9 +158,11 @@ a:hover {
 
 /* Footer */
 .footer {
-  position: fixed;
+  background-color: var(--background-medium);
+  position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: 0.75rem;
+  height: 5rem;
   width: 100%;
   text-align: center;
 }
