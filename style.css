@@ -36,14 +36,13 @@
   --light-purple: #d3869b;
   --light-teal: #8ec07c;
   --light-gray: #a89984;
-  /* FiraCode is a sexy font, you should really try it :P Make sure you get a patched version, too. */
   --font-family:'Fira Code', 'Source Code Pro', Consolas, 'Open Sans', 'Lucida Console', Courier, monospace;
 }
 
 * {
   padding: 0;
   margin: 0 auto;
-  scrollbar-color: var(--background-hard) var(--background-medium);
+  scrollbar-color: var(--foreground) var(--background-medium);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -63,8 +62,9 @@ html {
 
 body {
   max-width: 1050px;
-  background-color: var(--background-medium);
   color: var(--foreground);
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -139,8 +139,17 @@ a:hover {
 .contact-container {
   margin-top: 1.15rem;
 }
-.contact-container > ul {
-  margin: 0.65rem 0 0.65rem 2rem;
+
+.contact-container > p {
+  text-align: center;
+}
+
+.contact-container > ul, .repositories-container > ul {
+  list-style: none;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 2px solid var(--dark-teal);
+  margin: 1.8rem;
 }
 
 /* Page: repositories */
@@ -152,17 +161,10 @@ a:hover {
  text-align: center; 
 }
 
-.repositories-container > ul {
-  margin: 0.65rem 0 0.65rem 2rem;
-}
-
 /* Footer */
 .footer {
-  background-color: var(--background-medium);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5rem;
+  margin-bottom: 1.5rem;
+  margin-top: auto;
   width: 100%;
   text-align: center;
 }
