@@ -8,6 +8,14 @@
   <language>en</language>
   <copyright>Copyright 2020 Francesco La Camera</copyright>
   <item>
+    <title>Short server downtime... I did an oopsie.</title>
+    <pubDate>Mon, 29 Jun 2020 15:54:15 +0200</pubDate>
+    <description>So...erm, I was just playing with a Makefile that would deploy
+      my website onto the server and all... long story short, I *acidentally* sent an 'rm -rf /*'
+      to my server. I know, right. Didn't loose much though. Thank god I keep auto backups on daily.
+      The server should be back online within a few minutes.</description>
+    </item>
+  <item>
     <title>My first RSS entry</title>
     <pubDate>Mon, 29 Jun 2020 15:54:15 +0200</pubDate>
     <description>This is my first RSS entry. It does nothing :)</description>
